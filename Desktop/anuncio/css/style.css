@@ -1,0 +1,108 @@
+body{
+	font-family:Arial;
+}
+
+.container{
+	margin: 10px;
+	width: 250px;
+	border:2px solid black;
+	position: relative;	
+	border-radius: 5px;
+}
+
+.title-wrapper{
+	background-image:url('http://placekitten.com/960/690');
+	height: 250px;
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+
+}
+
+.title-info {
+
+	display: flex;
+	background-color: rgba(17,17,17,0.5);
+	color: white;
+	margin: auto;
+	padding: 5px;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.info-ad{
+	display: flex;
+	width: 70%;
+}
+
+.info-btn-wrapper{
+	margin: auto;
+}
+
+.info-btn {
+	background-color: #1ECEE9;
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+.description {
+	margin: 10px;
+}
+
+.info-line{
+	display: flex;
+	line-height: 25px;
+	font-size: 16px;
+}
+
+.info-line-left {
+	display: flex;
+	width: 50%;
+	font-weight: bolder;
+}
+
+.doar {
+	display: flex;
+	background-color: #cfcfcf;
+	padding:20px 0 20px 10px;
+}
+
+.value-text{
+	display: flex;
+	width: 50%;
+	margin:auto;
+	font-size: 18px;
+}
+
+.value-text span {
+	font-weight: bold;
+	word-spacing: 5px;
+}
+
+.btn-donate {
+	margin: auto;
+}
+
+.donate-btn {
+	background-color: #1ECEE9;
+	color: white;
+	padding: 5px 20px 5px 20px;
+	font-size: 15px;
+	border: none;
+	border-radius: 5px;
+
+}
+
+.phone-btn {
+	background-color: #009900;
+	padding: 10px;
+	text-align: center;
+}
+
+.phone-btn a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
