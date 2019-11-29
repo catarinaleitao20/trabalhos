@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="https:////unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+	//3 escopos: global (disponivel para tudo) , função e bloco
+
+
+/*	function x (){		
+		if (true) {
+			var serie = "The 100"
+		}
+	}
+	x()
+
+	if (true) {
+
+		console.log(serie)
+	}
+
+	console.log(serie)*/
+
+	/*if (true) {
+		let serie = "Friends"
+		console.log(serie)
+	}*/
+
+	/* ---- VAR ----
+
+	var serie = "The 100"
+
+	{
+		var serie = "Games Of Throne"
+		console.log("dentro do bloco: " + serie);
+	}
+
+	console.log("fora do bloco: " + serie); 
+
+	*/
+
+	// ---- LET ---- //
+
+	let serie = "The 100"
+
+	{
+		let serie = "Games Of Throne"
+		console.log("dentro do bloco: " + serie);
+	}
+
+	console.log("fora do bloco: " + serie);
+ 
+
+	</script>
+
+</head>
+<body>
+	<div id="output"></div>
+
+</body>
+</html>

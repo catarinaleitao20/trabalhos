@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Bootstrap - Elementos Flutuantes</title>
+  </head>
+
+  <body style="margin-bottom: 200px; padding: 16px;">
+
+    <!--Elementos Flutuantes-->
+    <div style="border:1px solid red" class="clearfix">
+      <div class="bg-success float-left">Float Left</div>
+      <div class="bg-warning float-right">Float Right</div>
+      
+    </div>
+
+
+    <!--Posicionamento Fixo - top e bottom-->
+    <h1 class="fixed-top">Título do Conteúdo fixo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec condimentum felis. Donec nec dolor non sem faucibus laoreet in vitae velit. Vivamus nec accumsan enim. Aenean magna felis, suscipit vel aliquet sit amet, venenatis a enim. Ut pretium arcu sed diam malesuada molestie. Duis libero sapien, porttitor nec diam eu, ullamcorper elementum eros.</p>
+
+    <!--
+      Float responsivo - float-<tela>-<direçao>
+        tela:sm,md,lg,xl
+        alinhamento: left, right
+    -->
+    <p class="float-sm-right">Tela &gt;=576px </p><!--Small-->
+    <p class="float-md-right">Tela &gt;=768px</p><!--Medium-->
+    <p class="float-lg-right">Tela &gt;= 992px</p><!--Large-->
+    <p class="float-xl-right">Tela &gt;=1200px </p><!--Extra Large-->
+
+   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec condimentum felis. Donec nec dolor non sem faucibus laoreet in vitae velit. Vivamus nec accumsan enim. Aenean magna felis, suscipit vel aliquet sit amet, venenatis a enim. Ut pretium arcu sed diam malesuada molestie. Duis libero sapien, porttitor nec diam eu, ullamcorper elementum eros.</p>
+
+   <!--Colar no topo (sticky)-->
+   <ul class="list-inline bg-warning sticky-top">
+     <li class="list-inline-item">Item 1</li>
+     <li class="list-inline-item">Item 2</li>
+     <li class="list-inline-item">Item 3</li>
+   </ul>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

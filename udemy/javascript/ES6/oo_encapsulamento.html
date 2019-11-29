@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="https:////unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	class Tv{
+		constructor(){
+			this._relacaoCanais = Array(1, 2, 3, 4);
+			this._canalAtivo = 1;
+			this._volume = 6;
+		}
+
+		//getters e setters
+		get canalAtivo(){
+			return this._canalAtivo
+		}
+
+		set canalAtivo(canal){
+			//canal ativo ou nao
+			if(this._relacaoCanais.indexOf(canal) !== -1){
+				this._canalAtivo = canal
+			}
+		}
+
+
+	}
+
+	let tv = new Tv()
+
+	tv.canalAtivo = 5
+	console.log(tv.canalAtivo);
+	
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

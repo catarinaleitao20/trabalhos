@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<title>Javascript - Tratamento de Erros</title>
+	<script>
+
+
+		var video = Array();
+
+		video[1] = Array()
+		video[1]['nome'] = 'Fullmetal Alchemist'
+		video[1]['categoria'] = 'Anime'
+
+		function getVideo(video){
+
+			try{
+				//logica
+				//http
+				console.log(video[0]['nome'])
+			}catch(erro){
+				tratarErro(erro)
+				console.log('Agora sim podemos tratar o erro')
+				throw new Error('Errooooo')
+
+
+			}finally{
+				console.log('Sempre passa por aqui')
+			}
+			console.log('A aplicação não morreu')
+		}
+
+		function tratarErro(e){
+			//logica para registar o erro no servidor
+			console.log(e)
+		}
+
+		getVideo(video)
+
+		
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>

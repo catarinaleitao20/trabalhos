@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<title>Javascript - For in</title>
+	<script>
+		//var listaConvidados = ['Catarina', 'Marco', 'Estrela', 'Carolina', 'Célia']
+		var listaConvidados = Array() 
+
+		listaConvidados['a'] = 'Jorge'
+		listaConvidados[10] = 'Jamilton'
+		listaConvidados['zebra'] = 'Jose'
+		listaConvidados[-1] = 'Ana'
+		listaConvidados[true] = 'Maria'
+
+		console.log(listaConvidados);
+
+		for( var x in listaConvidados){
+			console.log('Índice ' + x + ' valor ' + listaConvidados[x]);
+
+		}
+
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>

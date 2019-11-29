@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+	<script>
+
+	var nome = ' Jorge Sant Ana ';
+	//Propriedade length
+	document.write('Jorge Sant Ana'.length);
+
+	document.write('<br/>');
+
+	//charAt() returna o caracter no indice especificado em uma string
+	document.write('Jorge Sant Ana'.charAt(7));
+
+	document.write('<br/>');
+
+	//indexOf() retorna a posição da primeira ocorrência de un valor especificado em uma string
+	document.write(nome.indexOf('S'));	
+
+	document.write('<br/>');
+
+	//replace() procura uma string por um valor especificado, ou uma expressão regular, e retorna uma nova string onde os valores especificados são substituidos
+	document.write(nome.replace('Sant Ana', 'Silva'));	
+
+	document.write('<br/>');
+
+	//substr() o metodo extrai partes de uma string, iniciando no caracter na posição especificada e retorna o número especificado em caracteres.
+	document.write(nome.substr(6, 4));
+
+	document.write('<br/>');
+
+	//toLowerCase() converte a string em letras minúsculas e toUpperCase() converte a string em letras maiúsculas
+	document.write(nome.toLowerCase());
+
+	document.write('<br/>');
+
+	document.write(nome.toUpperCase());
+
+	document.write('<br/>');
+
+	//trim() remove espaços em branco das extremidades
+	document.write('-' + nome.trim() + '-');
+
+
+
+	</script>
+</head>
+<body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+
+      //Notação de classe
+
+      class Produto {
+        constructor(descricao, preco){
+          this.descricao = descricao
+          this.preco = preco
+        }
+
+        verDescricao(){
+          console.log(`${this.descricao} por apenas ${this.preco}`)
+        }
+      }
+
+      let produto = new Produto('Notebook', 2000)
+      produto.verDescricao();
+
+      //notação de objeto literal
+      //------------------- objetos literais são utilizados pq nem sempre são necessários a criação de classes.
+
+      let produtoLiteral = {
+        descricao: 'Frigorifico',
+        preco: '1500',
+        verDescricao: function(){
+          console.log(`${this.descricao} por apenas ${this.preco}`)
+        }
+      } 
+      produtoLiteral.verDescricao();
+
+    </script>
+    
+  </head>
+  <body>
+    <div id="output"></div>
+  </body>
+</html>

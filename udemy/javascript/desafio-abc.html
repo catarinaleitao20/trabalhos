@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+	<script>
+		var a = 10;
+		var b = 20;
+		var c = null; // váriavel auxiliar utilizada na lógica
+
+		document.write ('O valor de A é:' + a + '<br>');
+		document.write ('O valor de B é:' + b + '<br>');
+		document.write ('O valor de C é:' + c + '<br>');
+
+		document.write('<hr>');
+
+		//Lógica de Inversão dos valores das váriaveis A e B
+		c = a; //utilizada a váriavel C para armazenar temporariamente o valor de A
+		a = b; //sobrepoe o valor da variavel A com o valor da variavel B
+		b = c; //sobrepoe o valor da variavel B com o valor da variavel C (C neste momento contém o valor de A)
+		c = null //opcional: remove o valor contido na váriavel C.
+
+
+		//
+		document.write ('O valor de A é:' + a + '<br>');
+		document.write ('O valor de B é:' + b + '<br>');
+		document.write ('O valor de C é:' + c + '<br>');
+
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      
+
+      let Carro = function(){
+        this.cor = "Amarelo"
+        this.modelo = "Mini"
+        this.velocidadeAtual = 0
+        this.velocidadeMaxima = 140
+
+        this.acelerar = function(){
+          //this.velocidadeAtual += 10
+          let velocidade = this.getvelocidadeAtual() + 10
+          this.setvelocidadeAtual(velocidade)
+        }
+
+        this.getvelocidadeAtual = function(){
+          return this.velocidadeAtual
+        }
+
+
+        this.setvelocidadeAtual = function(velocidadeAtual){
+          this.velocidadeAtual = velocidadeAtual
+        }
+      }
+
+      let carro = new Carro()
+
+      console.log(`A velocidade atual é:${carro.getvelocidadeAtual()}`);
+      carro.acelerar()
+      console.log(`A velocidade atual é:${carro.getvelocidadeAtual()}`);
+
+    </script>
+    
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+	<script>
+		
+		//05/08/2019
+		var data = new Date();
+
+		//o getDate() retorna o dia do mês. o getMonth() retorna o mes. getFullYear() retorna o ano
+		// document.write(data.getDate() + ' / ' + (data.getMonth() +1) + ' / ' + (data.getFullYear()));
+
+
+		//Adicionar / Remover dias
+	/*
+		document.write(data.toString());
+		data.setDate(data.getDate() + 1); // remover um dia : -1
+		document.write( '<hr>')
+		document.write(data.toString());
+
+		document.write( '<br> <hr> <br>')
+
+		//Adicionar / Remover meses
+		document.write(data.toString());
+		data.setMonth(data.getMonth() + 1); // remover um mes : -1
+		document.write( '<hr>')
+		document.write(data.toString());
+
+
+		//Adicionar / Remover anos
+		document.write(data.toString());
+		data.setFullYear(data.getFullYear() + 3); // remover um ano : -1
+		document.write( '<br><hr><br>')
+		document.write(data.toString());
+	*/
+
+	//15/01/2017
+	var data1 = new Date(2017, 0, 15);
+
+
+	//23/02/2017
+	var data2 = new Date(2017, 1, 23);
+
+
+	document.write(data1.toString());
+	document.write('<hr>');
+	document.write(data2.toString());
+	document.write('<br><br><hr><br><br>');
+
+	//converter datas para algoque possamos calcular
+
+	document.write(data1.getTime());
+	document.write('<hr>');
+	document.write(data2.getTime());
+
+	//27/07/1993
+
+	document.write('<br><br><hr>')
+
+	var milisegundos_entredatas = Math.abs(data1.getTime() - data2.getTime());
+	//encontrar a quantidade de milisegundos entre a data1 e data2
+	document.write(milisegundos_entredatas);
+
+	document.write('<br><br><hr>')
+	//1 dia tem 24h, cada hora tem 60minutos, cada minuto tem 60segundos e cada segundo tem 1000 milisegundos. quantos milisegundos existem em um dia?
+	var milisegundos_por_dia = (1*24*60*60*1000);
+	document.write('1 dia tem: ' + milisegundos_por_dia + 'milisegundos');
+
+	document.write('<br><br><hr>')
+	document.write('A diferença entre data 1 e data 2 é : ' + Math.ceil(milisegundos_entredatas / milisegundos_por_dia));
+	document.write('<br><br><hr>');
+
+
+
+
+	</script>
+</head>
+<body>
+</body>
+</html>

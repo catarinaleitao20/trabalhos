@@ -1,0 +1,109 @@
+/*TRANSIÇÕES*/
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: #C12957;
+
+}
+
+
+#caixa:hover{
+	width: 400px;
+	height: 300px;
+	background: #0A9A6F;
+	/*transition: width 3s;*/ 
+	transition: all 3s; 
+}
+
+
+/*/*Animações*/
+/*@keyframes animacao-caixa {
+	from{ /*Estado inicial*/
+/*		background:red;
+		border-radius: 0px;
+		top:0;
+		left: 0;
+
+	}
+	to{/*Estado final*/
+		/*background:green;
+		border-radius: 300px;
+		top:200px;
+		left: 200px;
+	}
+}*/
+
+/*
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: relative;
+	/*animation-name: animacao-caixa;
+	animation-duration: 5s;
+	animation-delay: 3s; 
+	animation-iteration-count: 2;
+	animation-direction: alternate;*/
+
+	/*animation: animacao-caixa 5s 3s 2 alternate;
+}*/
+
+
+/*SOMBRAS*/
+
+/*#caixa{
+	width: 300px;
+	height: 300px;
+	padding: 8px;
+	margin: 20px;
+	background: #009670;
+	box-shadow:10px 10px 4px rgba(0,0,0,0.6);
+
+}
+
+#caixa h1{
+	color: white;
+	font-family: lato;
+	/*Primeiro valor movimenta a sombra na horizontal. Segundo valor movimenta a sombra na vertical*/
+	/*text-shadow: 4px 5px black;*/ 
+
+/*	text-shadow: 4px 8px 4px rgba(0,0,0,0.6);
+}
+*/
+
+/*GRADIENTE*/
+
+/*#caixa{
+	width: 300px;
+	height: 300px;
+	/*background: url("../imagens/camera.png");*/
+	/*background:linear-gradient(to left,pink, yellow);*/
+/*	background:radial-gradient(red, white);
+}
+*/
+
+/*TRANSPARENCIA*/
+
+/*#caixa h1{*/
+	/*background:rgba(255,255,255,0.5);
+}
+
+/*BORDER BOX*/
+
+/*
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+
+#caixa2{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+}
+
+*/

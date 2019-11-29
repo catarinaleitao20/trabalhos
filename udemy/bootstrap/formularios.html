@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Listas</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  </head>
+
+  <body style="margin-bottom: 200px; padding: 16px;">
+
+    <!-- Formulários
+        classe: form-control-<opções>
+        opções: sm, lg
+    -->
+
+    <form>
+        <!-- Caixas de Texto -->
+        <div class="form-group">
+            <label for="utilizador">Utilizador</label>
+            <input class="form-control" type="text" id="utilizador" placeholder="Digite o seu nome">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="text" id="email" placeholder="Digite o seu Email" readonly>
+            <small class="form-text">Email será validado</small>
+        </div>
+
+        <!-- Select -->
+        <div class="form-group">
+            <label for="distritos">Distritos</label>
+            <select class="form-control" id="distritos">
+                <option>Castelo Branco</option>
+                <option>Faro</option>
+                <option>Lisboa</option>
+                <option>Braga</option>
+            </select>
+        </div>
+
+        <!-- TextArea -->
+        <div class="form-group">
+            <label for="mensagem"> Mensagem </label>
+            <textarea class="form-control" id="mensagem" rows="3"></textarea>
+        </div>
+
+        <!-- File Input -->
+        <div class="form-group">
+            <label for="arquivo">Arquivo</label>
+            <input class="form-control-file" type="file" id="arquivo">
+        </div>
+
+        <!-- Custom File Input -->
+        <div class="custom-file">
+            <input class="custom-file-input" type="file" id="arquivo">
+            <label class="custom-file-label"> Selecione Arquivo</label>
+        </div>
+
+        <br><br>
+        <!-- Range -->
+        <div class="form-group">
+            <label id="range">Satisfação</label>
+            <input class="custom-range" type="range" id="range" min="1" max="5">
+        </div>
+
+        <!-- Button -->
+        <input class="btn btn-primary" type="submit" value="Guardar">
+
+    </form>
+    <br><br>
+
+        <!-- Formulário inline -->
+    <form class="form-inline">
+        <input class="form-control mr-2" type="text" placeholder="Username">
+        <input class="form-control mr-2" type="password" placeholder="Password">
+        <input class="btn btn-primary" type="submit" value="Login">
+        
+    </form>  
+
+    <br><br>
+
+        <!-- 
+            Validação de Formulário
+            Classes: is-valid, is-invalid, invalid-feedback, valid-feedback
+        -->
+    <form>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control is-valid" type="text" id="email" placeholder="Email">
+            <div class="valid-feedback">
+                Email válido
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input class="form-control is-invalid" type="password" placeholder="Password">
+            <div class="invalid-feedback">
+            Senha Incorreta
+            </div>
+        </div>
+        
+        <input class="btn btn-primary" type="submit" value="Logar" >
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
