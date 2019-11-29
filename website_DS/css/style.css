@@ -1,0 +1,171 @@
+body {
+  margin: 0px;
+  font-family: monospace;
+}
+
+header {
+  background-image:linear-gradient(
+      rgba(0, 0, 100, 0.3), rgba(0, 0, 100, 0.3)), url('../images/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+main{
+	width: 100%;
+}
+
+footer {
+	background-color: black;
+
+	height: 100%;
+	clear: both;
+	position: relative;
+	padding: 10px;
+}
+
+h1{
+	color: white;
+}
+
+h2{
+
+	text-transform: uppercase;
+
+}
+
+.nav-list{
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  justify-content: flex-end; 
+  margin: 0px;
+}
+
+
+.nav-list-logo{
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.nav-list-item {
+  margin: 20px;
+}
+
+.nav-list a {
+ color: white;
+ text-decoration: none; 
+}
+
+.more {
+	transform: translateY(0);
+    border: none;
+    bottom: 0;
+    color: inherit;
+    font-size: 0.8em;
+    height: 8.5em;
+    left: 50%;
+    letter-spacing: 0.225em;
+    margin-left: -8.5em;
+    opacity: 1;
+    outline: 0;
+    padding-left: 0.225em;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 16em;
+    z-index: 1;
+    color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+.about-box{
+	width: 100%;
+	height: 100vh;
+}
+
+.about-container{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+}
+
+.about-column {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 400px;
+	margin: 40px;
+}
+
+.about-column img{
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+
+.card-container {
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px;
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.card-container h3{
+	margin: 10px 0;
+}
+
+.card-container p{
+	margin: 5px 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.contact-box{
+	width: 100%;
+	height: 100vh;
+	background-color: gray;
+}
+
+.contact-container{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+}
+
+.contact-column {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 400px;
+	margin: 40px;
+}
+
+.contact-column img{
+	width: 500px;
+	height: 500px;
+	margin: auto;
+}
+
+
+.footer-social {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+@media (max-width: 900px) {
+	.about-container .contact-container {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+}
